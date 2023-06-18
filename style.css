@@ -29,11 +29,11 @@ html {
     top: 0;
     z-index: 10;
     padding: 3rem;
-    animation: goDown 1.5s forwards;
-    transition: height .5s;
+    /* animation: goDown 1.5s forwards; */
+    transition: height 0.5s;
 }
 
-.change.navbar {
+.navbar.change {
     height: 100vw;
 }
 
@@ -70,7 +70,7 @@ html {
 
 .nav-list {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -78,12 +78,13 @@ html {
     align-items: center;
     opacity: 0;
     visibility: hidden;
-    transition: all .5s;
+    transition: all .2s;
 }
 
-.change.nav-list {
+.change .nav-list {
     opacity: 1;
     visibility: visible;
+    transition: all .7s .5s;
 }
 
 .nav-link {
