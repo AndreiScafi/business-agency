@@ -47,9 +47,9 @@ btn.addEventListener('click', () => {
 });
 
 video.addEventListener('timeupdate', () => {
-    const barWidth = Math.round((video.currentTime / video.duration) * 100);
-    bar.style.width = barWidth + '%';
-})
+    const barWidth = video.currentTime / video.duration;
+    bar.style.width = `${barWidth * 100}%`;
+});
 
 /* End of Section 2 Video */
 
